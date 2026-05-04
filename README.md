@@ -10,7 +10,6 @@ A beginner-friendly calculator made using Python.
 
 ## How to Run
 ```bash
-python calculator.py
 print("Simple Calculator")
 
 num1 = float(input("Enter first number: "))
@@ -34,3 +33,4 @@ elif operator == "/":
 
 else:
     print("Invalid operator")
+python calculator.py

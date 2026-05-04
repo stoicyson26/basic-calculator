@@ -1,15 +1,23 @@
-# basic-calculator
-A simple beginner-friendly Python calculator that performs basic arithmetic operations like addition, subtraction, multiplication, and division. Built to practice Python fundamentals such as user input, conditionals, and operators.
-# Simple Python Calculator
+print("Simple Calculator")
 
-A beginner-friendly calculator made using Python.
+num1 = float(input("Enter first number: "))
+operator = input("Enter operator (+, -, *, /): ")
+num2 = float(input("Enter second number: "))
 
-## Features
-- Addition
-- Subtraction
-- Multiplication
-- Division
+if operator == "+":
+    print("Result:", num1 + num2)
 
-## How to Run
-```bash
-python calculator.py
+elif operator == "-":
+    print("Result:", num1 - num2)
+
+elif operator == "*":
+    print("Result:", num1 * num2)
+
+elif operator == "/":
+    if num2 != 0:
+        print("Result:", num1 / num2)
+    else:
+        print("Error: Division by zero")
+
+else:
+    print("Invalid operator")
